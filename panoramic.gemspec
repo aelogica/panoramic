@@ -10,12 +10,12 @@ Gem::Specification.new do |s|
   s.summary     = %q{Stores rails views on database}
   s.description = %q{Stores rails views on database}
 
-  s.add_dependency 'rails', ">= 3.0.7"
+  s.add_dependency 'rails', "~> 4.2"
   s.add_development_dependency "capybara", "~> 1.1.2"
   s.add_development_dependency "factory_girl"
   s.add_development_dependency "simplecov"
   s.add_development_dependency "sqlite3"
-  s.add_development_dependency "rspec-rails", '~> 2.10.0'
+  s.add_development_dependency "rspec-rails", '~> 2.0'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
