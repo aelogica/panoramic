@@ -1,17 +1,8 @@
 require File.expand_path('../boot', __FILE__)
 
-require "action_controller/railtie"
-require "action_view/railtie"
-require "action_mailer/railtie"
-
+require 'rails/all'
 Bundler.require
 require "panoramic"
-
-if defined? ActiveRecord
-  require "active_model/railtie"
-  require "active_record/railtie"
-end
-
 
 module Dummy
   class Application < Rails::Application
